@@ -1,0 +1,15 @@
+.box{
+    width:50%;
+    height: 100px;
+    background-color: antiquewhite;
+    
+}
+.line{
+    background-color: red;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: clip;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+

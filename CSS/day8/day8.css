@@ -1,0 +1,36 @@
+h1{
+    text-align: center;
+}
+.section-title{
+    font-size: 20px;
+    padding-bottom: 5px;
+    margin-left: 10px;
+    color: #258BD6;
+    font-weight: 600;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;    
+}
+.des{
+    font-size: 17px;
+    padding: 10px;
+    letter-spacing: 1px;
+    line-height: 26px;
+}
+.num{
+    color: rgb(218, 136, 221);
+}
+
+.triangle {
+    width: 0;
+    /* width style */
+    border: 20px solid;
+    /* top [left, tight] bottom*/
+    border-color: #f30 transparent transparent;
+}
+
+.icon {
+background-color: antiquewhite;
+width: 15px;
+height: 15px;
+border: 11px solid transparent;
+}

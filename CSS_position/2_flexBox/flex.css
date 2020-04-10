@@ -1,0 +1,79 @@
+.main {
+    display: flex;
+    flex-direction: row;
+    /* 
+    1.flex-direction: 布局方向，它决定 flex-item 是从左到右、从右到左、从上到下、还是从下到上进行布局，它会影响主轴的方向，以及items 的布局起点位置。
+    它主要包含 4 个值：
+        row（默认）：从水平方向的左侧开始布局；
+        row-reverse：从水平方向的右侧开始布局；
+        column：从垂直方向的顶部开始布局；
+        column-reverse: 从垂直方向的底部开始布局； 
+    */
+
+    justify-content: space-around;
+    /* 
+    2.justify-content: 它决定「主轴」items 的对齐方式，flex-direction 会影响主轴的方向，这一点需要注意，主轴不一定是水平方向，不能把 justify-content 看做是控制水平方向的对齐方式。
+    它主要有以下几个值：
+        flex-start（默认）：与主轴的起始位置（main start）对齐；
+        flex-end：与主轴的结束位置（main end）对齐；
+        center：居中于主轴；
+        space-around: 左右边距是中间的 1/2；
+        space-evenly: 每个 item 的间距相等；
+        space-between: 左右无边距； 
+    */
+
+    align-items:center;
+     /* 
+    3.align-items: 它决定「纵轴」items 的对齐方式，flex-direction 会影响纵轴的方向，这一点需要注意，纵轴不一定是垂直方向，不能把 align-items 看做是控制垂直方向的对齐方式。
+    它主要有以下几个值：
+        flex-start（默认）：与纵轴的起始位置（cross start）对齐；
+        flex-end：与纵轴的结束位置（cross end）对齐；
+        center：居中与纵轴；
+        baseline：与基线对齐；
+        stretch：扩展满纵轴；
+    */
+    
+    flex-wrap:wrap;
+     /* 
+    4.flex-wrap: items 超出容器后该如何显示，是否要多行显示。如果为多行显示，可以把每行看做是一个容器，图中主轴对齐方式为 space-around，每行对齐方式都为 space-around。
+    它有以下几个值：
+        nowrap（默认）：单行显示；
+        wrap：多行显示；
+        wrap-reverse：多行显示；
+    */
+
+    /* 
+    5.flex-flow: 它是 flex-direction 和 flex-wrap 的简写，
+    比如 flex-flow: row nowrap，表示 flex-direction 为 row，flex-wrap 为 nowrap。 
+    */
+    align-content:space-between;
+    /*
+     6.align-content: 如果为「多行」时，它表示在「纵轴」方向的对齐方式。
+     它的值与 justify-content 值相同。 
+     */
+    text-align:center;
+
+    background-color: antiquewhite;
+
+    font-size: 30px;
+    width: 600px;
+    height: 500px;
+    margin: 0 auto;
+
+}
+.space-around {
+    width: 300px;
+    background-color: cadetblue;
+}
+.center {
+    width: 300px;
+    background-color:darkkhaki;
+}
+.centerLeft{
+    width: 300px;
+    background-color:rgba(177, 80, 101, 0.61);
+}
+.end {
+    width: 300px;
+    background-color: rgb(201, 130, 223);
+}

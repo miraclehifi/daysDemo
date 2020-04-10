@@ -1,0 +1,242 @@
+
+.image{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+}
+.top{
+    text-align: center;
+    color:black;
+}
+.top >div{
+    background-image: url(./images/park-junkyu-maverick.jpg);
+    
+    width: 375px;
+    height: 310px;
+}
+.top >div >h1{
+    position:relative;
+    top:110px;
+}
+.top >div >div{
+    position: relative;
+    top: 150px;
+    /* left:20px; */
+} 
+.top >div >div >div{
+    background-image: url(./images/valentina-remenar-honey-by-valentina-remenar.jpg);
+    width: 71px;
+    height: 71px;
+    display: inline-block;
+    position: relative;
+    top: 40px;
+    left:50px;
+} 
+.top h5{
+    display: inline-block;
+    position:relative;
+    left:60px;
+    top:15px;
+}
+/* <<<>>> */
+.center1{
+    position: relative;
+    top: 50px;
+}
+.center1 >:nth-child(1){
+    display:inline-block;
+    width: 44px;
+    height: 44px;
+    background-image: url(./images/valentina-remenar-honey-by-valentina-remenar.jpg);
+}
+.center1 >:nth-child(2){
+    display: inline-block;
+    position: relative;
+    left:10px;
+    bottom:20px;
+    text-indent:0.2em;
+    /* line-height:10em; */
+    color: rgb(65, 138, 221);
+
+}
+.center1 >:nth-child(3){
+    letter-spacing:1px;
+    line-height:0.5em;
+    text-indent:3em;
+}
+.image9{
+    width: 250px;
+    height: 250px;
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-content: space-evenly;
+    position: relative;
+    top: 10px;
+    left: 55px;
+    /* margin: 0 auto; */
+}
+.image9 >div{
+    width: 80px;
+    height: 80px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.image9 :nth-child(1){
+    background-image: url(./images/center1_images/ia_100000100.jpg);
+}
+.image9 :nth-child(2){
+    background-image: url(./images/center1_images/ia_100000104.jpg);
+}
+.image9 :nth-child(3){
+    background-image: url(./images/center1_images/ia_100000123.jpg);
+}
+.image9 :nth-child(4){
+    background-image: url(./images/center1_images/ia_100003551.jpg);
+}
+.image9 :nth-child(5){
+    background-image: url(./images/center1_images/ia_100004865.jpg);
+}
+.image9 :nth-child(6){
+    background-image: url(./images/center1_images/ia_100008189.jpg);
+}
+.image9 :nth-child(7){
+    background-image: url(./images/center1_images/ia_100008190.jpg);
+}
+.image9 :nth-child(8){
+    background-image: url(./images/center1_images/ia_100008191.jpg);
+}
+.image9 :nth-child(9){
+    background-image: url(./images/center1_images/ia_100010015.jpg);
+}
+/* .twoHours{
+    float: right;
+} */
+.twoHours >p{
+    display: inline-block;
+    font-size: 13px;
+    position: relative;
+    right: 40px;
+    top: 10px;
+    color: rgba(100, 100, 100, 0.719);
+}
+.twoHours >div{
+    width:29px;
+    height: 19px;
+    display: inline-block;
+    position: relative;
+    top: 15px;
+    left: 180px;
+    background-image: url(./icons/icon/star.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.comments{
+    width: 301px;
+    height: 70px;
+    position: relative;
+    left: 55px;
+    background-color: #f7f7f7;
+}
+.heart{
+    position: relative;
+    top: 15px;
+    right: 30px;
+    margin-bottom: 20px;
+}
+.heart >p{
+    font-size: 12px;
+    color: rgb(46, 101, 173);
+}
+.heart >p::before{
+    width: 15px;
+    height: 14px;
+    
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url(./icons/icon/star_small.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-right: 5px;
+}
+hr{
+    border: 0;
+    height: 1px;
+    max-width: 375px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0;
+    background-color: #ebebecc2;
+}
+.commentsBottom p{
+    display: inline;
+    font-size: 12px;
+    position: relative;
+    right: 30px;
+    letter-spacing:1px;
+    line-height:0.5em;
+    text-indent:3em;
+}
+.commentsBottom :nth-child(1){
+    color: rgb(46, 101, 173);
+}
+.center2{
+    position: relative;
+}
+.win{
+    width: 295px;
+    height: 50px;
+    background-color: #f7f7f7;
+    position: relative;
+    left: 3em;
+    padding: 5px;
+}
+.win >:nth-child(1){ 
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    background-image:url(./images/ia_100000018.jpg) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    right: 40px;
+    top: 5px;
+}
+.win >:nth-child(2){
+    display: inline-block;
+    position: relative;
+    left: 15px;
+    bottom: 35px;
+}
+.image1{
+    width: 260px;
+    height: 162px;
+    background-image: url(./images/ia_100000028.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: top;
+    position: relative;
+    left: 3em;
+}
+.imageZ{
+    width: 147px;
+    height: 147px;
+    background-image: url(./images/er.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    left: 3em;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.imageZ:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}

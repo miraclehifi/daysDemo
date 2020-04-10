@@ -1,0 +1,30 @@
+.wx-border {
+  border: solid 1px #1565C0;
+}
+.header {
+  padding: 0 16px;
+  background-color: #eeeeee;
+}
+.header .title {
+  color: #222222;
+  font-size: 18px;
+}
+.header .title::first-letter {
+  font-size: 24px;
+  color: red;
+}
+.header p a {
+  color: #1565C0;
+  font-size: 18px;
+  /**&:hover 相当于 a:hover**/
+}
+.header p a:hover {
+  color: red;
+}
+.header p:nth-child(3) {
+  width: 100px;
+  text-align: center;
+  padding: 8px;
+  /**引用在 base.less 定义好的选择器 **/
+  border: solid 1px #1565C0;
+}

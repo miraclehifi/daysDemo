@@ -1,0 +1,35 @@
+/* 伪类选择器*/
+/* 选中某个元素中符合某些条件的元素*/
+a{
+    font-size: 20px;
+    color:rgb(199, 108, 108);
+}
+a:hover{
+    font-size:30px;
+    color: rgb(46, 190, 41);
+}
+a:visited{
+    font-size: 300px;
+    background-color: rgb(69, 174, 223);
+}
+/*伪元素选择器*/
+/*给现有元素添加某些新的内容*/
+
+.left {
+    color: black;
+    font-size: 15px;
+}
+.left::before {
+    /* content: 'before'; */
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url('../day9/images/9.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-right: 4px;
+    width: 30px;
+    height: 30px;
+}
+/*after 元素后，first-letter 首字母，first-line 首行*/
