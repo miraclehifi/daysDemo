@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        };
+        .cli1Before{
+            width:100px;
+            background-color: blueviolet;
+        };
+        .cli1After{
+            display: none!important;
+        };
+        .img1{
+            width: 200px;
+            height: 200px;
+            cursor: pointer;
+        };
+
+    </style>
+</head>
+<body>
+    <div id="cli1" class="cli1Before">
+        事件源
+    </div>
+    <img id="img1" class="img1" src="../image/EEsKU4_U4AEo8uf.jpg">
+    <script type="text/javascript">
+        //获取事件源
+        var cli1=document.getElementById("cli1");
+        //绑定事件
+        cli1.onclick=function (){
+            cli1.className="cli1After";
+        };
+        //加载页面后
+        window.onload=function (){
+            //获取事件源
+            var img1=document.getElementById("img1");
+            //绑定悬停事件
+            img1.onmouseover=function(){
+                img1.src="../image/TIM图片20190809104343.jpg";
+            };
+            //绑定移出事件
+            img1.onmouseout=function(){
+                img1.src="../image/EEsKU4_U4AEo8uf.jpg";
+            };
+        };
+    </script>
+</body>
+</html>

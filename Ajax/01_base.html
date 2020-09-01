@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../jQuery/jquery-3.5.1.js"></script>
+</head>
+<body>
+    <h1>等待刷新</h1>
+    <input type="button" value="get_Ajax" id="btnAjax">
+    <script>
+        $(document).ready(function (){
+            $('#btnAjax').onclick=function (){
+            //
+            var ajaxObj=new XMLHttpRequest();
+            //
+            ajaxObj.open('get','/api/categories');
+            //
+            ajaxObj.send();
+            //
+            ajaxObj.onreadystatechange=function(){
+                if(ajaxObj.readyState==4 && ajaxObj.status==200){
+                    console.log('数据返回成功');
+                    //
+                    console.log(ajaxObj.responseText);
+                    //
+                    $('h1').innerHTML=ajaxObj.responseText;
+                }
+            };
+
+        }
+    });
+       
+        
+    </script>
+</body> 
+</html>

@@ -19,4 +19,13 @@ function arrayMax(){
     return result;
 };
 // console.log(arrayMax(3,4,2,0));
+//* 使用arguments参数
 
+function isPush(one,two,three,...arr){
+    if(arr.indexOf(one) == -1) arr.push(one);
+    if(arr.indexOf(two) == -1) arr.push(two);
+    if(arr.indexOf(three) == -1) arr.push(three);
+    return arr;
+}
+// console.log(isPush(1,2,3,1,2,5,6,4));
+//* 使用rest参数

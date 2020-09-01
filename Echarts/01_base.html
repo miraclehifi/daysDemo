@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="echarts.js"></script>
+    <style>
+        .main{
+            width:600px;
+            height: 400px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="main" id="main"></div>
+</body>
+<script>
+    var myChart = echarts.init(document.getElementById('main'));
+    
+    var option = {
+        //标题
+        title:{
+            text: 'chart'
+        },
+        //数据
+        dataset:{
+            source:[
+                ['Jan',0,0],
+                ['Feb',10,20],
+                ['Mar',20,40],
+                ['Apr',30,60],
+                ['May',40,80],
+                ['Jun',50,],
+                ['Jul',60],
+                ['Aug',70],
+                ['Sep',80],
+                ['Oct',90],
+                ['Nov',100],
+                ['Dec']
+            ]
+        },
+        //面板
+        grid:[
+            {top:40,bottom:'58%'},
+            {top:'58%',bottom:40}],
+        //坐标
+        xAxis:[
+            {type:'category',gridIndex:0},
+            {type:'category',gridIndex:1}],
+        yAxis:[
+            {type:'value',gridIndex:0},
+            {type:'value',gridIndex:1}],
+        
+        //系列
+        series:[
+            {
+                type:'line',
+                xAixsIndex:0,
+                yAxisIndex:0,
+                encode:{x:0,y:1},
+            },
+            {
+                type:'bar',
+                xAxisIndex:1,
+                yAxisIndex:1,
+                encode:{x:0,y:2},
+            },
+            {
+                type:'line',
+                xAxisIndex:1,
+                yAxisIndex:1,
+                encode:{x:0,y:2},
+            },
+        ],
+
+    };
+    myChart.setOption(option);
+    // console.log(option.series[0].type);
+    
+</script>
+</html>

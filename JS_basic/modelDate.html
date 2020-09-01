@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width:600px;
+            margin:100px,auto;
+            color: red;
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <script>
+        var date=new Date();
+        var year=date.getFullYear();
+        var month=date.getMonth();
+        var day=date.getDate();
+        var week=date.getDay();
+        var star=["星期日","星期一","星期二","星期三","星期四","星期五","星期六"];
+        var divDate=document.getElementsByTagName("div")[0];
+        divDate.innerText="今天是："+year+"年"+(month+1)+"月"+day+"日"+star[week];
+// 当前时间的时、分、秒
+        var date1=new Date();
+        var hour=date1.getHours();
+        var min=date1.getMinutes();
+        var sec=date1.getSeconds();
+        console.log(hour+":"+min+":"+sec);
+// 时间戳，单位是毫秒
+        var oldDate = new Date("1970/01/01 0:0:0");
+        console.log(oldDate.getTime());
+         
+// setInterval建立时间间隔，反复执行某个函数,单位毫秒，        
+        var div1=document.getElementsByTagName("div")[1];
+        var timer=setInterval(fn,1);
+        function fn(){
+            var nowTime=new Date();
+            var futureTime=new Date("2020/12/10 11:20:00");
+            var timeSum=futureTime.getTime()-nowTime.getTime();//获取时间差
+            var day1=parseInt(timeSum/1000/60/60/24);
+            var hour1=parseInt(timeSum/1000/60/60%24);
+            var min1=parseInt(timeSum/1000/60%60);
+            var sec1=parseInt(timeSum/1000%60);
+            var millSec1=parseInt(timeSum%1000);
+            //小于10时自动补0
+            day1<10?"0"+day1:day1;
+            hour1<10?"0"+hour1:hour1;
+            min1<10?"0"+min1:min1;
+            if(millSec1<100){
+                millSec1="0"+millSec1;
+            }else if(millSec1<10){
+                millSec1="00"+millSec1;
+            };
+            // console.log(day1);
+            // console.log(parseInt(timeSum/1000/60/60/24));
+            if(timeSum<0){
+                div1.innerText="距离苹果发布会还有00天00小时00分00秒000毫秒";
+                clearInterval(timer);
+                return;
+            }
+            div1.innerText="距离苹果发布会还有"+day1+"天"+hour1+"小时"+min1+"分"+sec1+"秒"+millSec1+"毫秒";
+
+        };
+
+    </script>
+</body>
+
+</html>

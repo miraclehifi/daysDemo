@@ -29,3 +29,6 @@ div div{
 .main :nth-child(3){
     background-color:rgb(225, 65, 145);
 }
+body{
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+}
